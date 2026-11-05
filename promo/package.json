@@ -1,0 +1,13 @@
+{
+  "name": "kinroll-promo",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "tts": "bun tts.ts",
+    "render": "bun render.ts",
+    "build": "bun tts.ts && bun render.ts"
+  },
+  "dependencies": {
+    "puppeteer-core": "^24.0.0"
+  }
+}

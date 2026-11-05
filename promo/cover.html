@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<title>Kinroll promo cover</title>
+<!-- One cover, three layouts. The layout follows the viewport: 1080x1920 (9:16), 1920x1080 (16:9), 1440x1080 (4:3). -->
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  html, body { width: 100vw; height: 100vh; overflow: hidden; }
+  body { background: #F6F1EA; font-family: "PingFang SC", "Hiragino Sans GB", sans-serif; -webkit-font-smoothing: antialiased; position: relative; }
+  .abs { position: absolute; }
+  .blob { position: absolute; border-radius: 50%; filter: blur(90px); }
+  .navy { color: #2E3A59; }
+  .hl { background: linear-gradient(transparent 60%, rgba(245,185,66,.85) 60%, rgba(245,185,66,.85) 92%, transparent 92%); }
+  #chip { display: inline-flex; align-items: center; gap: 18px; padding: 12px 34px 12px 18px; border-radius: 99px; background: #2E3A59; color: #F5B942; font-size: 40px; font-weight: 600; letter-spacing: 2px; white-space: nowrap; }
+  #h1 { font-weight: 600; line-height: 1.15; white-space: nowrap; }
+  #h2 { font-weight: 600; white-space: nowrap; }
+  #sub { font-size: 46px; color: #5A6480; white-space: nowrap; }
+  #phone { padding: 14px; border-radius: 62px; background: #10131C; box-shadow: 0 50px 120px rgba(46,58,89,.35); transform: rotate(-6deg); }
+  #phone img { display: block; width: 100%; border-radius: 48px; }
+  .stamp { position: absolute; padding: 8px 28px; border: 8px solid #FF5D5D; border-radius: 20px; color: #FF5D5D; background: rgba(255,255,255,.92); font-size: 64px; font-weight: 600; box-shadow: 0 16px 40px rgba(0,0,0,.15); }
+  .badge { position: absolute; display: flex; align-items: center; gap: 14px; padding: 22px 34px; border-radius: 30px; background: #F5B942; box-shadow: 0 20px 60px rgba(46,58,89,.25); font-size: 44px; font-weight: 600; color: #2E3A59; white-space: nowrap; }
+
+  /* 9:16 — text stacked on top, phone below; key content stays inside the central 3:4 crop */
+  .v-9x16 #text { left: 0; right: 0; top: 250px; text-align: center; }
+  .v-9x16 #h1 { font-size: 156px; margin-top: 30px; }
+  .v-9x16 #h2 { font-size: 104px; margin-top: 30px; }
+  .v-9x16 #sub { margin-top: 40px; }
+  .v-9x16 #phone { left: 250px; top: 860px; width: 580px; }
+  .v-9x16 #st1 { left: 60px; top: 1010px; transform: rotate(-12deg); }
+  .v-9x16 #st2 { right: 70px; top: 1130px; transform: rotate(10deg); }
+  .v-9x16 #st3 { left: 90px; top: 1380px; transform: rotate(8deg); }
+  .v-9x16 #badge { right: 50px; top: 1530px; }
+  .v-9x16 #b1 { width: 760px; height: 760px; left: -260px; top: -200px; }
+  .v-9x16 #b2 { width: 700px; height: 700px; right: -260px; bottom: 120px; }
+
+  /* 16:9 — text column on the left, phone on the right bleeding off the bottom */
+  .v-16x9 #text { left: 130px; top: 200px; }
+  .v-16x9 #h1 { font-size: 168px; margin-top: 40px; }
+  .v-16x9 #h2 { font-size: 112px; margin-top: 26px; }
+  .v-16x9 #sub { margin-top: 40px; }
+  .v-16x9 #phone { left: 1260px; top: 110px; width: 520px; }
+  .v-16x9 #st1 { left: 1110px; top: 300px; transform: rotate(-12deg); }
+  .v-16x9 #st2 { left: 1660px; top: 420px; transform: rotate(10deg); }
+  .v-16x9 #st3 { left: 1130px; top: 640px; transform: rotate(8deg); }
+  .v-16x9 #badge { left: 1500px; top: 860px; }
+  .v-16x9 #b1 { width: 800px; height: 800px; left: -260px; top: -320px; }
+  .v-16x9 #b2 { width: 760px; height: 760px; right: -200px; bottom: -300px; }
+
+  /* 4:3 — same split as 16:9, tighter */
+  .v-4x3 #text { left: 90px; top: 210px; }
+  .v-4x3 #chip { font-size: 34px; }
+  .v-4x3 #h1 { font-size: 128px; margin-top: 36px; }
+  .v-4x3 #h2 { font-size: 92px; margin-top: 22px; }
+  .v-4x3 #sub { font-size: 38px; margin-top: 36px; }
+  .v-4x3 #phone { left: 930px; top: 120px; width: 460px; }
+  .v-4x3 #st1 { left: 850px; top: 290px; font-size: 56px; transform: rotate(-12deg); }
+  .v-4x3 #st2 { left: 1220px; top: 440px; font-size: 56px; transform: rotate(10deg); }
+  .v-4x3 #st3 { left: 820px; top: 640px; font-size: 56px; transform: rotate(8deg); }
+  .v-4x3 #badge { left: 1040px; top: 880px; font-size: 40px; }
+  .v-4x3 #b1 { width: 700px; height: 700px; left: -240px; top: -300px; }
+  .v-4x3 #b2 { width: 640px; height: 640px; right: -200px; bottom: -260px; }
+</style>
+</head>
+<body>
+  <div class="blob" id="b1" style="background:#9CC3E6;opacity:.6"></div>
+  <div class="blob" id="b2" style="background:#F5B942;opacity:.4"></div>
+
+  <div id="text" class="abs">
+    <span id="chip">
+      <svg width="56" height="56" viewBox="232 262 560 500"><defs><clipPath id="o"><rect x="232" y="262" width="380" height="380" rx="80"/></clipPath></defs><rect x="232" y="262" width="380" height="380" rx="80" fill="#F6F1EA"/><rect x="412" y="382" width="380" height="380" rx="80" fill="#9CC3E6"/><rect x="412" y="382" width="380" height="380" rx="80" fill="#F5B942" clip-path="url(#o)"/></svg>
+      相知 · 完全离线的 AI 相册
+    </span>
+    <div id="h1" class="navy">相册<span style="color:#FF5D5D">又满了</span>？</div>
+    <div id="h2" class="navy"><span class="hl">AI 一键清理</span></div>
+    <div id="sub">废片 · 重复 · 截图 · 一句话搜图</div>
+  </div>
+
+  <div id="phone" class="abs"><img src="../assets/screenshots/zh-cleanup.jpg"></div>
+
+  <div class="stamp" id="st1">废片</div>
+  <div class="stamp" id="st2">重复</div>
+  <div class="stamp" id="st3">截图</div>
+  <div class="badge" id="badge">
+    <svg width="56" height="56" viewBox="0 0 24 24" fill="none" stroke="#2E3A59" stroke-width="2.2" stroke-linejoin="round"><path d="M12 2l8 3v6c0 5-3.5 9-8 11-4.5-2-8-6-8-11V5z"/><path d="M8.5 12l2.5 2.5 4.5-5" stroke-linecap="round"/></svg>
+    照片不出手机
+  </div>
+<script>
+  const r = innerWidth / innerHeight;
+  document.body.className = r < 1 ? "v-9x16" : r > 1.5 ? "v-16x9" : "v-4x3";
+</script>
+</body>
+</html>

@@ -10,3 +10,5 @@ iosApp/Kinroll.xcodeproj/
 iosApp/build/
 dist/
 .cxx/
+promo/node_modules/
+promo/out/
