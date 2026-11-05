@@ -1,0 +1,8 @@
+<!-- Notification glyph from assets/kinroll-icon-fullbleed.svg: the two squares, overlap cut out, cropped to the mark. -->
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="24dp" android:height="24dp" android:viewportWidth="600" android:viewportHeight="600">
+    <group android:translateX="-212" android:translateY="-212">
+        <path android:fillColor="#FFFFFFFF" android:fillType="evenOdd"
+            android:pathData="M312,262H532A80,80 0,0 1,612 342V562A80,80 0,0 1,532 642H312A80,80 0,0 1,232 562V342A80,80 0,0 1,312 262Z M492,382H712A80,80 0,0 1,792 462V682A80,80 0,0 1,712 762H492A80,80 0,0 1,412 682V462A80,80 0,0 1,492 382Z" />
+    </group>
+</vector>

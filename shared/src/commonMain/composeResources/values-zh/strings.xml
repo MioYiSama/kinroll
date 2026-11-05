@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">相知</string>
+    <string name="back">返回</string>
+    <string name="retry">重试</string>
+
+    <string name="onboarding_permission_title">允许相知读取相册</string>
+    <string name="onboarding_permission_body">相知在本机整理、搜索和清理你的相册，照片不会离开这台设备。</string>
+    <string name="onboarding_feature_cleanup">找出截图、废片和重复照片</string>
+    <string name="onboarding_feature_search">按画面内容或图中文字搜索</string>
+    <string name="onboarding_feature_post">用照片写一篇社交媒体帖文</string>
+    <string name="onboarding_permission_button">授权相册访问</string>
+    <string name="onboarding_permission_denied">相册权限被拒绝。请前往系统设置，找到“相知”并允许访问照片，然后回到这里。</string>
+    <string name="onboarding_permission_limited">相知只能看到你选择的照片，清理和搜索也只覆盖这些照片。之后可以在系统设置中改为允许访问全部照片。</string>
+    <string name="onboarding_continue">继续</string>
+    <string name="onboarding_choose_again">重新选择</string>
+
+    <string name="onboarding_models_title">下载本地模型</string>
+    <string name="onboarding_models_body">共 %1$s，只需下载一次，之后完全离线运行。建议使用 Wi-Fi。</string>
+    <string name="model_group_clip">图像理解</string>
+    <string name="model_group_clip_desc">MobileCLIP · 分类与搜索</string>
+    <string name="model_group_ocr">文字识别</string>
+    <string name="model_group_ocr_desc">PaddleOCR · 识别截图与文档中的文字</string>
+    <string name="model_group_llm">文案生成</string>
+    <string name="model_group_llm_desc">Qwen3.5 0.8B · 帖文与搜索翻译</string>
+    <string name="model_ready">已下载</string>
+    <string name="download_source_title">下载源</string>
+    <string name="source_hugging_face">Hugging Face</string>
+    <string name="source_hugging_face_desc">huggingface.co</string>
+    <string name="source_hf_mirror">hf-mirror</string>
+    <string name="source_hf_mirror_desc">国内镜像</string>
+    <string name="source_modelscope">ModelScope（魔搭）</string>
+    <string name="source_modelscope_desc">modelscope.cn</string>
+    <string name="download_start">开始下载</string>
+    <string name="download_file">正在下载 %1$s</string>
+    <string name="download_overall">%1$s / %2$s</string>
+    <string name="download_failed">下载失败：%1$s</string>
+    <string name="onboarding_enter">进入</string>
+
+    <plurals name="home_photos_label">
+        <item quantity="other">张照片</item>
+    </plurals>
+    <string name="index_syncing">正在同步相册…</string>
+    <string name="index_progress">正在索引 %1$s / %2$s</string>
+    <plurals name="index_done">
+        <item quantity="other">已完成 %1$s 张</item>
+    </plurals>
+    <string name="index_waiting">已索引 %1$s / %2$s</string>
+    <string name="index_failed">索引中断：%1$s</string>
+    <string name="index_empty">相册里还没有照片</string>
+    <string name="entry_cleanup">图片清理</string>
+    <string name="entry_cleanup_desc">%1$s 张截图 · %2$s 张废片</string>
+    <string name="entry_overview">图片概览</string>
+    <string name="entry_overview_desc">按类别浏览，按画面或文字搜索</string>
+    <string name="entry_post">帖文生成</string>
+    <string name="entry_post_desc">用最多 9 张照片写一篇可直接发布的帖文</string>
+
+    <string name="tab_screenshots">截图</string>
+    <string name="tab_saved">保存图</string>
+    <string name="tab_bad">废片</string>
+    <string name="tab_duplicates">重复</string>
+    <string name="select_all">全选</string>
+    <string name="select_none">全不选</string>
+    <string name="selected_summary">已选 %1$s 张 · %2$s</string>
+    <string name="move_to_trash">移到回收站</string>
+    <plurals name="trashed_message">
+        <item quantity="other">已将 %1$s 张照片移到回收站</item>
+    </plurals>
+    <string name="empty_screenshots">没有截图</string>
+    <string name="empty_saved">没有保存图</string>
+    <string name="empty_bad">没有发现废片</string>
+    <string name="empty_duplicates">没有发现重复图片</string>
+    <string name="duplicates_finding">正在比对照片…</string>
+    <string name="duplicate_group">%1$s 张相似照片</string>
+    <string name="keep_label">保留</string>
+    <string name="reason_blur">模糊</string>
+    <string name="reason_dark">过暗</string>
+    <string name="reason_overexposed">过曝</string>
+    <string name="reason_accidental">误拍</string>
+    <string name="cleanup_indexing_note">已索引 %1$s / %2$s 张，索引继续进行时会出现更多结果。</string>
+
+    <string name="search_hint">搜索，例如：猫、发票</string>
+    <string name="searching">正在搜索…</string>
+    <plurals name="search_results">
+        <item quantity="other">“%2$s”的结果：%1$s 张</item>
+    </plurals>
+    <string name="search_no_results">没有与“%1$s”匹配的照片</string>
+    <string name="clear_search">清除</string>
+    <string name="filter_all">全部</string>
+    <string name="empty_overview">这里还没有照片</string>
+
+    <string name="kind_camera">相机拍摄</string>
+    <string name="kind_screenshot">截图</string>
+    <string name="kind_saved">保存的图片</string>
+    <string name="kind_unknown">未知</string>
+
+    <string name="category_people">人物</string>
+    <string name="category_child">儿童</string>
+    <string name="category_pet">宠物</string>
+    <string name="category_food">美食</string>
+    <string name="category_landscape">风景</string>
+    <string name="category_city">城市</string>
+    <string name="category_night">夜景</string>
+    <string name="category_plant">植物</string>
+    <string name="category_vehicle">交通工具</string>
+    <string name="category_document">文档</string>
+    <string name="category_receipt">票据</string>
+    <string name="category_art">艺术</string>
+    <string name="category_object">物品</string>
+    <string name="category_other">其他</string>
+
+    <string name="detail_taken">拍摄时间</string>
+    <string name="detail_dimensions">尺寸</string>
+    <string name="detail_size">大小</string>
+    <string name="detail_camera">相机</string>
+    <string name="detail_lens">镜头</string>
+    <string name="detail_iso">ISO</string>
+    <string name="detail_shutter">快门</string>
+    <string name="detail_aperture">光圈</string>
+    <string name="detail_focal">焦距</string>
+    <string name="detail_location">位置</string>
+    <string name="detail_kind">类型</string>
+    <string name="detail_category">分类</string>
+    <string name="detail_ocr">图中文字</string>
+    <string name="detail_not_found">这张照片已不在相册中</string>
+
+    <string name="post_pick_hint">点选下方照片，最多 9 张</string>
+    <string name="post_selected">已选 %1$s / 9</string>
+    <string name="post_limit">最多选择 9 张照片</string>
+    <string name="post_style">风格</string>
+    <string name="style_xiaohongshu">小红书</string>
+    <string name="style_moments">朋友圈</string>
+    <string name="style_weibo">微博</string>
+    <string name="style_instagram">Instagram</string>
+    <string name="post_notes_hint">补充说明（地点、心情、和谁一起…）</string>
+    <string name="post_generate">生成</string>
+    <string name="post_regenerate">重新生成</string>
+    <string name="post_stop">停止</string>
+    <string name="post_copy">复制</string>
+    <string name="post_copied">已复制</string>
+    <string name="post_loading_model">正在加载模型…</string>
+    <string name="post_writing">正在生成…</string>
+    <string name="post_failed">生成失败：%1$s</string>
+    <string name="post_all_photos">全部照片</string>
+    <string name="remove">移除</string>
+</resources>

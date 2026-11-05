@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024" width="1024" height="1024">
+  <title>Kinroll 相知</title>
+  <defs>
+    <clipPath id="kinroll-overlap">
+      <rect x="232" y="262" width="380" height="380" rx="80"/>
+    </clipPath>
+  </defs>
+  <rect width="1024" height="1024" fill="#F6F1EA"/>
+  <rect x="232" y="262" width="380" height="380" rx="80" fill="#2E3A59"/>
+  <rect x="412" y="382" width="380" height="380" rx="80" fill="#9CC3E6"/>
+  <rect x="412" y="382" width="380" height="380" rx="80" fill="#F5B942" clip-path="url(#kinroll-overlap)"/>
+</svg>

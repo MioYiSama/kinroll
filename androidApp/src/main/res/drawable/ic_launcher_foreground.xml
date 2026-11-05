@@ -1,0 +1,16 @@
+<!-- Mark from assets/kinroll-icon-fullbleed.svg, scaled to 64% around the centre so it sits inside the
+     adaptive-icon safe zone (the full-bleed proportions are for iOS and crowd Android's circular mask). -->
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="108dp" android:height="108dp" android:viewportWidth="1024" android:viewportHeight="1024">
+    <group android:pivotX="512" android:pivotY="512" android:scaleX="0.64" android:scaleY="0.64">
+        <path android:fillColor="#2E3A59"
+            android:pathData="M312,262H532A80,80 0,0 1,612 342V562A80,80 0,0 1,532 642H312A80,80 0,0 1,232 562V342A80,80 0,0 1,312 262Z" />
+        <path android:fillColor="#9CC3E6"
+            android:pathData="M492,382H712A80,80 0,0 1,792 462V682A80,80 0,0 1,712 762H492A80,80 0,0 1,412 682V462A80,80 0,0 1,492 382Z" />
+        <group>
+            <clip-path android:pathData="M312,262H532A80,80 0,0 1,612 342V562A80,80 0,0 1,532 642H312A80,80 0,0 1,232 562V342A80,80 0,0 1,312 262Z" />
+            <path android:fillColor="#F5B942"
+                android:pathData="M492,382H712A80,80 0,0 1,792 462V682A80,80 0,0 1,712 762H492A80,80 0,0 1,412 682V462A80,80 0,0 1,492 382Z" />
+        </group>
+    </group>
+</vector>

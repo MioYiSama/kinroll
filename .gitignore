@@ -1,1 +1,12 @@
 .DS_Store
+.gradle/
+build/
+.kotlin/
+local.properties
+.idea/
+*.iml
+xcuserdata/
+iosApp/Kinroll.xcodeproj/
+iosApp/build/
+dist/
+.cxx/

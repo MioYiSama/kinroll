@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Kinroll</string>
+    <string name="back">Back</string>
+    <string name="retry">Retry</string>
+
+    <!-- Onboarding: photo access -->
+    <string name="onboarding_permission_title">Let Kinroll see your photos</string>
+    <string name="onboarding_permission_body">Kinroll sorts, searches and cleans up your library on this device. Your photos never leave it.</string>
+    <string name="onboarding_feature_cleanup">Find screenshots, bad shots and duplicates</string>
+    <string name="onboarding_feature_search">Search by what is in a photo or the text on it</string>
+    <string name="onboarding_feature_post">Write social posts from your photos</string>
+    <string name="onboarding_permission_button">Allow photo access</string>
+    <string name="onboarding_permission_denied">Photo access was denied. Open the system Settings, find Kinroll, allow access to photos, then come back here.</string>
+    <string name="onboarding_permission_limited">Kinroll can only see the photos you picked, so cleanup and search cover those photos only. You can allow all photos later in Settings.</string>
+    <string name="onboarding_continue">Continue</string>
+    <string name="onboarding_choose_again">Change selection</string>
+
+    <!-- Onboarding: models -->
+    <string name="onboarding_models_title">Download the on-device models</string>
+    <string name="onboarding_models_body">%1$s in total, downloaded once. After that Kinroll works fully offline. Wi-Fi recommended.</string>
+    <string name="model_group_clip">Image understanding</string>
+    <string name="model_group_clip_desc">MobileCLIP · categories and search</string>
+    <string name="model_group_ocr">Text recognition</string>
+    <string name="model_group_ocr_desc">PaddleOCR · text in screenshots and documents</string>
+    <string name="model_group_llm">Writing</string>
+    <string name="model_group_llm_desc">Qwen3.5 0.8B · posts and search translation</string>
+    <string name="model_ready">Downloaded</string>
+    <string name="download_source_title">Download from</string>
+    <string name="source_hugging_face">Hugging Face</string>
+    <string name="source_hugging_face_desc">huggingface.co</string>
+    <string name="source_hf_mirror">hf-mirror</string>
+    <string name="source_hf_mirror_desc">Mirror for mainland China</string>
+    <string name="source_modelscope">ModelScope</string>
+    <string name="source_modelscope_desc">modelscope.cn</string>
+    <string name="download_start">Start download</string>
+    <string name="download_file">Downloading %1$s</string>
+    <string name="download_overall">%1$s of %2$s</string>
+    <string name="download_failed">Download failed: %1$s</string>
+    <string name="onboarding_enter">Get started</string>
+
+    <!-- Home -->
+    <plurals name="home_photos_label">
+        <item quantity="one">photo in your library</item>
+        <item quantity="other">photos in your library</item>
+    </plurals>
+    <string name="index_syncing">Reading your library…</string>
+    <string name="index_progress">Indexing %1$s of %2$s</string>
+    <plurals name="index_done">
+        <item quantity="one">%1$s photo indexed</item>
+        <item quantity="other">All %1$s photos indexed</item>
+    </plurals>
+    <string name="index_waiting">%1$s of %2$s indexed</string>
+    <string name="index_failed">Indexing stopped: %1$s</string>
+    <string name="index_empty">No photos yet</string>
+    <string name="entry_cleanup">Photo Cleanup</string>
+    <string name="entry_cleanup_desc">Screenshots %1$s · Bad shots %2$s</string>
+    <string name="entry_overview">Photo Overview</string>
+    <string name="entry_overview_desc">Browse by category, search by content or text</string>
+    <string name="entry_post">Post Writer</string>
+    <string name="entry_post_desc">Turn up to 9 photos into a ready-to-post caption</string>
+
+    <!-- Cleanup -->
+    <string name="tab_screenshots">Screenshots</string>
+    <string name="tab_saved">Saved images</string>
+    <string name="tab_bad">Bad shots</string>
+    <string name="tab_duplicates">Duplicates</string>
+    <string name="select_all">Select all</string>
+    <string name="select_none">Select none</string>
+    <string name="selected_summary">%1$s selected · %2$s</string>
+    <string name="move_to_trash">Move to trash</string>
+    <plurals name="trashed_message">
+        <item quantity="one">%1$s photo moved to trash</item>
+        <item quantity="other">%1$s photos moved to trash</item>
+    </plurals>
+    <string name="empty_screenshots">No screenshots</string>
+    <string name="empty_saved">No saved images</string>
+    <string name="empty_bad">No bad shots found</string>
+    <string name="empty_duplicates">No duplicates found</string>
+    <string name="duplicates_finding">Comparing photos…</string>
+    <string name="duplicate_group">%1$s similar photos</string>
+    <string name="keep_label">Keep</string>
+    <string name="reason_blur">Blurry</string>
+    <string name="reason_dark">Too dark</string>
+    <string name="reason_overexposed">Overexposed</string>
+    <string name="reason_accidental">Accidental</string>
+    <string name="cleanup_indexing_note">Indexed %1$s of %2$s photos. More results appear as indexing continues.</string>
+
+    <!-- Overview -->
+    <string name="search_hint">Search, e.g. cat, receipt</string>
+    <string name="searching">Searching…</string>
+    <plurals name="search_results">
+        <item quantity="one">%1$s result for “%2$s”</item>
+        <item quantity="other">%1$s results for “%2$s”</item>
+    </plurals>
+    <string name="search_no_results">No photos match “%1$s”</string>
+    <string name="clear_search">Clear</string>
+    <string name="filter_all">All</string>
+    <string name="empty_overview">No photos here yet</string>
+
+    <!-- Kinds -->
+    <string name="kind_camera">Camera</string>
+    <string name="kind_screenshot">Screenshot</string>
+    <string name="kind_saved">Saved image</string>
+    <string name="kind_unknown">Unknown</string>
+
+    <!-- Categories -->
+    <string name="category_people">People</string>
+    <string name="category_child">Kids</string>
+    <string name="category_pet">Pets</string>
+    <string name="category_food">Food</string>
+    <string name="category_landscape">Landscape</string>
+    <string name="category_city">City</string>
+    <string name="category_night">Night</string>
+    <string name="category_plant">Plants</string>
+    <string name="category_vehicle">Vehicles</string>
+    <string name="category_document">Documents</string>
+    <string name="category_receipt">Receipts</string>
+    <string name="category_art">Art</string>
+    <string name="category_object">Objects</string>
+    <string name="category_other">Other</string>
+
+    <!-- Detail -->
+    <string name="detail_taken">Taken</string>
+    <string name="detail_dimensions">Dimensions</string>
+    <string name="detail_size">File size</string>
+    <string name="detail_camera">Camera</string>
+    <string name="detail_lens">Lens</string>
+    <string name="detail_iso">ISO</string>
+    <string name="detail_shutter">Shutter</string>
+    <string name="detail_aperture">Aperture</string>
+    <string name="detail_focal">Focal length</string>
+    <string name="detail_location">Location</string>
+    <string name="detail_kind">Type</string>
+    <string name="detail_category">Category</string>
+    <string name="detail_ocr">Text in photo</string>
+    <string name="detail_not_found">This photo is no longer in your library</string>
+
+    <!-- Post -->
+    <string name="post_pick_hint">Tap photos below to choose up to 9</string>
+    <string name="post_selected">%1$s of 9 selected</string>
+    <string name="post_limit">You can choose up to 9 photos</string>
+    <string name="post_style">Style</string>
+    <string name="style_xiaohongshu">RedNote</string>
+    <string name="style_moments">Moments</string>
+    <string name="style_weibo">Weibo</string>
+    <string name="style_instagram">Instagram</string>
+    <string name="post_notes_hint">Anything to add? Place, mood, who was there…</string>
+    <string name="post_generate">Generate</string>
+    <string name="post_regenerate">Generate again</string>
+    <string name="post_stop">Stop</string>
+    <string name="post_copy">Copy</string>
+    <string name="post_copied">Copied</string>
+    <string name="post_loading_model">Loading the writing model…</string>
+    <string name="post_writing">Writing…</string>
+    <string name="post_failed">Couldn’t write the post: %1$s</string>
+    <string name="post_all_photos">All photos</string>
+    <string name="remove">Remove</string>
+</resources>
