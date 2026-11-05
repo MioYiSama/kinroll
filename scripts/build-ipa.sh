@@ -6,6 +6,6 @@ xcodebuild archive -project iosApp/Kinroll.xcodeproj -scheme Kinroll -configurat
 rm -rf build/ios/unsigned
 mkdir -p build/ios/unsigned/Payload dist
 cp -R build/ios/Kinroll.xcarchive/Products/Applications/Kinroll.app build/ios/unsigned/Payload/
-output="$PWD/dist/Kinroll-${VERSION:-0.1.0}-unsigned.ipa"
+output="$PWD/dist/Kinroll-${VERSION:-0.1.1}-unsigned.ipa"
 rm -f "$output"
 (cd build/ios/unsigned && zip -qry "$output" Payload)
