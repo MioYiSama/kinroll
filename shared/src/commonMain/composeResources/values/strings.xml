@@ -4,6 +4,12 @@
     <string name="back">Back</string>
     <string name="retry">Retry</string>
 
+    <!-- Acknowledgements -->
+    <string name="credits_title">Acknowledgements</string>
+    <string name="credits_software">Open-source software</string>
+    <string name="credits_models">On-device models</string>
+    <string name="credits_models_note">Downloaded on first launch, not bundled with the app.</string>
+
     <!-- Onboarding: photo access -->
     <string name="onboarding_permission_title">Let Kinroll see your photos</string>
     <string name="onboarding_permission_body">Kinroll sorts, searches and cleans up your library on this device. Your photos never leave it.</string>

@@ -60,3 +60,11 @@ llama.cpp b12121 官方 XCFramework 不含 iOS 模拟器切片。`scripts/fetch-
 测试：`./gradlew :shared:allTests`（Android host 与 iOS 模拟器）。
 
 推送 `v*` tag 会触发 `.github/workflows/release.yml`，构建 APK 与未签名 IPA 并上传到 GitHub Release。
+
+## 许可证
+
+源码以 [PolyForm Noncommercial License 1.0.0](./LICENSE) 公开。允许个人、学习等非商业用途的使用、修改和再分发。任何商业用途（出售本应用或其衍生作品、在应用商店付费上架、加入广告或付费服务等）都需要另行取得作者授权。
+
+“相知” / “Kinroll” 名称及应用图标不授权用于衍生作品。
+
+第三方组件遵循各自的许可证，例如 [llama.cpp](https://github.com/ggml-org/llama.cpp/blob/master/LICENSE)（MIT）。

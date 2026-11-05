@@ -4,6 +4,11 @@
     <string name="back">返回</string>
     <string name="retry">重试</string>
 
+    <string name="credits_title">致谢</string>
+    <string name="credits_software">开源软件</string>
+    <string name="credits_models">设备端模型</string>
+    <string name="credits_models_note">首次启动时下载，不随安装包分发。</string>
+
     <string name="onboarding_permission_title">允许相知读取相册</string>
     <string name="onboarding_permission_body">相知在本机整理、搜索和清理你的相册，照片不会离开这台设备。</string>
     <string name="onboarding_feature_cleanup">找出截图、废片和重复照片</string>

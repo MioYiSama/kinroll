@@ -16,8 +16,10 @@ import androidx.compose.foundation.lazy.LazyColumn
 import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.automirrored.filled.KeyboardArrowRight
+import androidx.compose.material.icons.outlined.Info
 import androidx.compose.material3.ExperimentalMaterial3Api
 import androidx.compose.material3.Icon
+import androidx.compose.material3.IconButton
 import androidx.compose.material3.LinearProgressIndicator
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.Scaffold
@@ -48,7 +50,13 @@ import org.jetbrains.compose.resources.stringResource
 
 @OptIn(ExperimentalMaterial3Api::class)
 @Composable
-fun HomeScreen(graph: AppGraph, onCleanup: () -> Unit, onOverview: () -> Unit, onPost: () -> Unit) {
+fun HomeScreen(
+    graph: AppGraph,
+    onCleanup: () -> Unit,
+    onOverview: () -> Unit,
+    onPost: () -> Unit,
+    onCredits: () -> Unit,
+) {
     val vm = viewModel { HomeViewModel(graph) }
     val ui by vm.ui.collectAsStateWithLifecycle()
     // Fires once when Home first appears (lifecycle catch-up) and on every return to the foreground.
@@ -56,7 +64,14 @@ fun HomeScreen(graph: AppGraph, onCleanup: () -> Unit, onOverview: () -> Unit, o
 
     Scaffold(
         topBar = {
-            TopAppBar(title = { Text(stringResource(Res.string.app_name), fontWeight = FontWeight.SemiBold) })
+            TopAppBar(
+                title = { Text(stringResource(Res.string.app_name), fontWeight = FontWeight.SemiBold) },
+                actions = {
+                    IconButton(onClick = onCredits) {
+                        Icon(Icons.Outlined.Info, stringResource(Res.string.credits_title))
+                    }
+                },
+            )
         },
     ) { padding ->
         LazyColumn(

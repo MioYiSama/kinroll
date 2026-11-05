@@ -12,6 +12,8 @@ import net.mioyi.kinroll.AppGraph
 import net.mioyi.kinroll.platform.PermissionState
 import net.mioyi.kinroll.ui.cleanup.CleanupScreen
 import net.mioyi.kinroll.ui.components.LocalThumbnailCache
+import net.mioyi.kinroll.ui.credits.CreditsScreen
+import net.mioyi.kinroll.ui.credits.LicenseScreen
 import net.mioyi.kinroll.ui.home.HomeScreen
 import net.mioyi.kinroll.ui.onboarding.OnboardingScreen
 import net.mioyi.kinroll.ui.overview.OverviewScreen
@@ -25,6 +27,8 @@ import net.mioyi.kinroll.ui.theme.KinrollTheme
 @Serializable data object OverviewRoute
 @Serializable data class PhotoDetailRoute(val id: String)
 @Serializable data object PostRoute
+@Serializable data object CreditsRoute
+@Serializable data class LicenseRoute(val name: String, val licenseFile: String)
 
 @Composable
 fun App(graph: AppGraph) {
@@ -48,6 +52,7 @@ fun App(graph: AppGraph) {
                         onCleanup = { nav.navigate(CleanupRoute) },
                         onOverview = { nav.navigate(OverviewRoute) },
                         onPost = { nav.navigate(PostRoute) },
+                        onCredits = { nav.navigate(CreditsRoute) },
                     )
                 }
                 composable<CleanupRoute> {
@@ -69,6 +74,16 @@ fun App(graph: AppGraph) {
                 }
                 composable<PostRoute> {
                     PostScreen(graph, onBack = { nav.popBackStack() })
+                }
+                composable<CreditsRoute> {
+                    CreditsScreen(
+                        onBack = { nav.popBackStack() },
+                        onOpen = { name, file -> nav.navigate(LicenseRoute(name, file)) },
+                    )
+                }
+                composable<LicenseRoute> { entry ->
+                    val route = entry.toRoute<LicenseRoute>()
+                    LicenseScreen(route.name, route.licenseFile, onBack = { nav.popBackStack() })
                 }
             }
         }

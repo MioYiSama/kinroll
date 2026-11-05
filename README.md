@@ -60,3 +60,11 @@ The official llama.cpp b12121 XCFramework has no iOS Simulator slice. `scripts/f
 Tests: `./gradlew :shared:allTests` (Android host and iOS simulator).
 
 Pushing a `v*` tag runs `.github/workflows/release.yml`, which builds the APK and the unsigned IPA and attaches both to a GitHub release.
+
+## License
+
+Source-available under the [PolyForm Noncommercial License 1.0.0](./LICENSE). Personal, educational and other noncommercial use, modification and redistribution are allowed. Any commercial use — selling the app or derivatives, publishing it to app stores for payment, bundling it with ads or paid services — requires a separate license from the author.
+
+The name "Kinroll" / "相知" and the app icon are not licensed for use in derivative works.
+
+Third-party components keep their own licenses, e.g. [llama.cpp](https://github.com/ggml-org/llama.cpp/blob/master/LICENSE) (MIT).
