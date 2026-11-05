@@ -16,6 +16,15 @@ An AI-powered, fully offline photo album management app.
 - Natural language search
 - One-tap post creation
 
+## Screenshots
+
+<p>
+  <img src="assets/screenshots/en-home.jpg" width="200" alt="Home: library size, indexing progress and the three tools">
+  <img src="assets/screenshots/en-overview.jpg" width="200" alt="Photo Overview: search and category filters">
+  <img src="assets/screenshots/en-cleanup.jpg" width="200" alt="Photo Cleanup: duplicate groups with the copies preselected">
+  <img src="assets/screenshots/en-post.jpg" width="200" alt="Post Writer: a post generated on the device from two photos">
+</p>
+
 ## How it works
 
 Kotlin Multiplatform + Compose Multiplatform for Android 11+ and iOS 17+. Every model runs on the device:

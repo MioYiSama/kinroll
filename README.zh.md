@@ -16,6 +16,15 @@
 - 自然语言检索
 - 一键生成帖子
 
+## 截图
+
+<p>
+  <img src="assets/screenshots/zh-home.jpg" width="200" alt="主页：照片数量、索引进度与三个功能入口">
+  <img src="assets/screenshots/zh-overview.jpg" width="200" alt="图片概览：搜索与分类筛选">
+  <img src="assets/screenshots/zh-cleanup.jpg" width="200" alt="图片清理：重复图片分组，副本已预选">
+  <img src="assets/screenshots/zh-post.jpg" width="200" alt="帖文生成：在设备上根据两张照片生成的帖文">
+</p>
+
 ## 实现
 
 Kotlin Multiplatform + Compose Multiplatform，支持 Android 11+ 与 iOS 17+。所有模型都在设备上运行：
